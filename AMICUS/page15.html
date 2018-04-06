@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-
   <style>
     body {
       font-family: sans-serif;
@@ -14,7 +13,7 @@
     /* sticky */
 
     .header {
-      padding: 8px 8px;
+      padding: 8px 8spx;
       background: white;
       color: #000000;
     }
@@ -23,7 +22,7 @@
       padding: 0;
     }
 
-    .sticky {
+    /* .sticky {
       position: fixed;
       top: 0;
       width: 100%;
@@ -31,9 +30,15 @@
 
     .sticky+.content {
       padding-top: 102px;
+    } */
+
+    .navbar {
+        overflow: hidden;
+        background-color: white;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
     }
-
-
     a {
       text-decoration: none;
       display: inline-block;
@@ -106,9 +111,7 @@
     img {
       width: 22%;
       margin-left: 40%;
-      /* margin-top: 95px; */
-
-
+       margin-top: 3%
     }
 
 
@@ -141,7 +144,7 @@
 
     .buttons {
       margin-left: 39%;
-      margin-top: 30px;
+      /* margin-top: 30px; */
     }
 
     .side-left {
@@ -186,6 +189,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+        margin-top: 19%;
     }
 
     .arrow-right {
@@ -223,6 +227,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+            margin-top: 19%;
       }
       .transparent_btn {
         display: inline-block;
@@ -312,7 +317,7 @@
 <body>
 
 
-  <div class="header" id="myHeader">
+  <div class="navbar" >
     <div class="buttons">
       <a href="page14.html" class="side-left"> ❮ | <p class="arrow-left"> <b>PREV PAGE</b></p>  </a>
       <a href="#" class="transparent_btn">|</a>
@@ -325,24 +330,6 @@
     <img src="images/page15.png" class="responsive">
 
   </div>
-
-
-  <script>
-    window.onscroll = function() {
-      myFunction()
-    };
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-  </script>
 
 </body>
 
